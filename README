@@ -1,0 +1,18 @@
+Make sure you have a 'windows_faye_daemon' database with a messages table with the following columns: primary_key(int): id, string: description, datetime: received_date, string: external_id
+
+Run the server:
+  cd into the server
+  ' rackup config.ru -s thin -E production '
+
+Run the subscriber:
+  cd into windows_faye_daemon
+  ' bundle exec ruby subscriber.rb '
+  
+Run the rails app:
+  cd into rails_client
+  create, migrate
+  rails s
+  
+http://localhost:3000
+
+Make a new request

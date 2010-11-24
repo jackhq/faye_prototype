@@ -1,0 +1,4 @@
+source :rubygems
+gem 'faye'
+gem 'sequel'
+gem 'mysql'

@@ -1,0 +1,17 @@
+%h1
+  Publish/Subscribe Message Client Prototype
+
+%table
+  %tr
+    %th Description
+    %th Sent Date
+    %th Confirmation Number
+    %th Recieved Date
+  - @requests.each do |request|
+    %tr
+      %td= request.description
+      %td= request.sent_date.strftime("%m/%d/%Y %I:%M %p") if request.sent_date
+      %td= request.confirmation_number if request.confirmation_number
+      %td= request.received_date.strftime("%m/%d/%Y %I:%M %p") if request.received_date
+
+= link_to "New requests", new_request_path

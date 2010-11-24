@@ -1,0 +1,31 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.2)
+    daemons (1.1.0)
+    em-http-request (0.2.15)
+      addressable (>= 2.0.0)
+      eventmachine (>= 0.12.9)
+    eventmachine (0.12.10)
+    faye (0.5.3)
+      em-http-request (>= 0.2)
+      eventmachine (>= 0.12)
+      json (>= 1.0)
+      rack (>= 1.0)
+      thin (>= 1.2)
+    json (1.4.6)
+    mysql (2.8.1)
+    rack (1.2.1)
+    sequel (3.14.0)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  faye
+  mysql
+  sequel
